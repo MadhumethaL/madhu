@@ -1,0 +1,234 @@
+/* Reset some default styles */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f0f0;
+}
+
+
+.header-area {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    padding-left: 0%;
+    padding-right: 0%;
+    z-index: 100;
+    font-size: 20px;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.main-nav .logo {
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.main-nav ul li {
+    margin-right: 20px;
+}
+
+.main-nav ul li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.main-nav ul li a:hover {
+    color: #0078d4;
+}
+
+
+.main-banner h6 {
+    font-size: 18px;
+}
+
+.main-banner h2 {
+    font-size: 48px;
+    margin-top: 20px;
+}
+
+/* Add more styles for other sections as needed */
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: #0078d4;
+}
+
+
+.main-banner {
+  background-image: url('../static/Quiz_back.jpg');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 100px 0;
+
+}
+
+.banner-text {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px; 
+}
+
+.banner-text h6 {
+  font-size: 18px;
+}
+
+.banner-text h2 {
+  font-size: 48px;
+  margin-top: 20px;
+}
+
+
+
+.right-content h5 {
+  position: absolute; 
+  
+  right: 0; 
+  margin: 0; 
+}
+.text-button {
+  position: relative; 
+}
+
+
+.text-button a {
+  position: absolute; 
+  
+  right: 0; 
+  margin: 0; 
+}
+
+
+
+.column {
+  float: left;
+  width: 33%;
+  
+}
+
+
+.row {margin: 0 5px;}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
+  text-align: center;
+  background-color: #f1f1f1;
+  border-radius: 30px;
+  height: 250px;
+  margin-right: 10px;
+}
+
+
+
+.coming-events .left-button .main-white-button p {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 30px;
+}
+
+.scrolling-images .item {
+  display: inline-block; 
+  margin-right: 20px; 
+  border-radius: 10px; 
+  overflow: hidden; 
+}
+
+.scrolling-images .item img {
+  width: 190px;
+  height: auto; 
+  border-radius: 10px; 
+}
+
+.card-scrolling-images .card-item {
+  display: inline-block; 
+  margin-right: 20px; 
+  border-radius: 10px; 
+  overflow: hidden; 
+  width: 300px; 
+}
+
+.card-scrolling-images .card-item img {
+  border-radius: 10px 10px 0 0; 
+}
+
+.card-scrolling-images .card-item .card-title {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.card-scrolling-images .card-item .card-text {
+  font-size: 14px;
+}
+
+.card-scrolling-images .card {
+  border: none;
+}
+
+#img1 {
+  display: flex;
+  justify-content: center;
+}
+h3 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: x-large;
+}
+.amazing-venues .container .row .col-lg-9 .left-content {
+  font-family: 'Satisfy', cursive;
+  font-size: 20px;
+}
+#Login {
+  background-image: url('../static/Login.avif');
+  background-size: cover;
+  background-position: center;
+}
