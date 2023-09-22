@@ -1,0 +1,263 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" style="margin-left: 7px;margin-right: 7px;">
+
+<head>
+    
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <meta name="description" content="">
+    <meta name="author" content="Tooplate">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+
+    <title>{% block title %}Quizz page{% endblock %}</title>
+
+    <link rel="stylesheet" type="text/css" href="{% static 'style1.css' %}">
+
+</head>
+
+<body>
+    {% block content %}
+    
+    <div class="pre-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-sm-6">
+                    <span>Hey! Time to showcase your skills.</span>
+                </div>
+                <div class="col-lg-6 col-sm-6">
+                    <div class="text-button">
+                        <a href="{% url 'contact' %}">Contact Us Now! <i class="fa fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+
+                        <a href="{% url 'index' %}" class="logo">Quiz<em>Pedia</em></a>
+
+                        <ul class="nav" style="font-size: 20px;">
+                            <li><a href="{% url 'index' %}">Home</a></li>
+                            <li><a href="{% url 'about' %}">About Us</a></li>
+                            <li><a href="{% url 'contact' %}">Contact Us</a></li>
+                            <li><a href="{% url 'leaderboard' %}">Leaderboard</a></li>
+                            <li><a href="{% url 'prize' %}">Prize Winners</a></li>
+                            <li><a href="{% url 'Login' %}">Login</a></li>
+                        </ul>
+                        <a class='menu-trigger'>
+                            <span></span>
+                        </a>
+
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="banner-text">
+                        <h6>HEARTY WELCOME TO ALL QUIZZARDS!!!</h6>
+                        <h2>Quiz Festival 2023</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    
+
+    <div class="scrolling-images">
+        <div class="item">
+           <img  src="{% static 'C.jpg' %}" alt="">
+        </div>
+        <div class="item">
+           <img src="{% static 'Python.png' %}" alt="">
+        </div>
+        <div class="item">
+            <img src="{% static 'Django.png' %}" alt="">
+        </div>
+        <div class="item">
+            <img src="{% static 'ML.jpg' %}" alt="">
+        </div>
+        <div class="item">
+         <img src="{% static 'Flask.png' %}" alt="">
+        </div>
+        <div class="item">
+           <img src="{% static 'Docker.png' %}" alt="">
+        </div>
+        <div class="item">
+            <img src="{% static 'Flutter.png' %}" alt="">
+        </div>
+    </div>
+    <br>
+    <br>
+    
+
+    <div class="amazing-venues">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9">
+                    <div class="left-content">
+                        <br>
+                        <h3 style="font-size: 30px;">Amazing Way To Improve and Test Your Skills in FOSS TOOLS</h3>
+                        <br>
+                        <p style="margin-inline-start: 20px;">We are so excited to guide you and shaping you to become a successful Software Engineer.
+                            You can just visit our website , showcase your skills , learn something new everyday. We will be updating our questions on a daily basis and you can feel free to contact us any
+                            time...You can make use of this opportunity and make yourself better in this competitive world. You can explore different types of tools and
+                            and can test yourself in different fields...
+                        </p>
+                        <br>
+                        <br>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="image-container" id ="img1">
+        <img src="{% static 'AI.avif' %}" alt="AI Image">
+    </div>
+                <div class="col-lg-12" style="margin-left: 10px;">
+                    <div class="section-heading">
+                        <br>
+                        <h2>Our Tools and Rooms</h2>
+                        <br>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="column">
+                       <a href="{% url 'C' %}" style="text-decoration: none;color: black;">
+                        <div class="card">
+                           
+                            <img id="c1" src="{% static 'C.jpg' %}" alt="C language" style="width: 150px">
+                            <div class ="container">
+                                <h4><b>C language</b></h4>
+                              <p>C Stars Assemble</p>
+                            </div>
+                              
+                        </div></a>
+                    </div>
+                    <div class = "column">
+                        <a href= "{% url 'Python' %}" style="text-decoration: none;color: black;">
+                        <div class="card" >
+                            <img id="c4" src="{% static 'Python.png' %}" alt="Python" style="width:150px">
+                              <div class ="container">
+                                <h4><b>Python</b></h4>
+                              <p>Welcome Pystars</p>
+                              </div>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="column">
+                        <a href= "{% url 'ML' %}" style="text-decoration: none;color: black;">
+                        <div class="card">
+                            <img id="c3" src="{% static 'ML.jpg' %}" alt="Machine Learning" style="width: 200px" height="150px">
+                              <div class ="container">
+                                <h4><b>Machine Learning</b></h4>
+                              <p>Hi ML mavericks</p>
+                              </div>
+                        </div>
+                    </a>
+                    </div>
+                    
+                </div>
+        </div>
+    </div>
+    <br>
+    <div class="coming-events" >
+        <div class="left-button">
+            <div class="main-white-button" style="margin-left: 10px;">
+                <h2>Upcoming Rooms</h2>
+                <br>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <div class="card" style="height: 250px;">
+                    <img id="c1" src="{% static 'Flutter.png' %}" alt="Flutter" style="width: 200px" height="150px">
+                    <div class ="container">
+            
+                        <h4><b>Flutterists Hall</b></h4>
+                      <p>Wednesday: 08:00-14:00</p>
+                    </div>
+                      
+                </div>
+            </div>
+            <div class = "column">
+                <div class="card" style="height: 250px;">
+                    <img id="c4" src="{% static 'Flask.png' %}" alt="Flask" style="width:200px" height="150px">
+                      <div class ="container">
+            
+                        <h4><b>Flaskians</b></h4>
+                      <p>Tuesday: 15:30-19:30</p>
+                      </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card" style="height: 250px;">
+                    <img id="c3" src="{% static 'Docker.png' %}" alt="Machine Learning" style="width: 200px" height="150px">
+                      <div class ="container">
+                        <h4><b>Docker Brains</b></h4>
+                      <p>Thursday: 09:00-23:00</p>
+                      </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <br>
+    <br>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4" style="margin-left: 20px;">
+                    <div class="links">
+                        <h4 style="color: burlywood;margin-left: 10px;">Useful Links</h4>
+                        <ul>
+                            <ul class="nav">
+                                <li><a style="text-decoration: none;color: white;" href="{% url 'info' %}">Info</a></li>
+                                <li><a href="{% url 'contact' %}" style="text-decoration: none;color:white">Contact Us</a></li>
+                                <li><a href="{% url 'Guides' %}" style="text-decoration: none;color:white">Guides</a></li>
+                                <li><a href="{% url 'Timings' %}" style="text-decoration: none;color:white">Timings</a></li>
+                                <li><a href="{% url 'Outreach' %}" style="text-decoration: none;color:white">Outreach</a></li>
+                            </ul>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4" style="margin-left: 20px;">
+                    <div class="hours">
+                        <h4 style="color: burlywood;">Open Hours for Rooms</h4>
+                        <ul>
+                            <li>Mon to Fri: 10:00 AM to 8:00 PM</li>
+                            <li>Sat - Sun: 11:00 AM to 4:00 PM</li>
+
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    
+
+    {% endblock %}
+
+</body>
+
+</html>

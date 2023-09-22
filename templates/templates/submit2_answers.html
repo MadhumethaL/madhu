@@ -1,0 +1,108 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" style="margin-left: 7px;margin-right: 7px;">
+
+<head>
+    
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <meta name="description" content="">
+    <meta name="author" content="Tooplate">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+
+    <title>{% block title %}Results page{% endblock %}</title>
+
+    <link rel="stylesheet" type="text/css" href="{% static 'style1.css' %}">
+
+</head>
+
+<body>
+        {% block content %}
+        
+        <div class="pre-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-sm-6">
+                        <span>Hey! Time to showcase your skills.</span>
+                    </div>
+                    <div class="col-lg-6 col-sm-6">
+                        <div class="text-button">
+                            <a href="{% url 'contact' %}">Contact Us Now! <i class="fa fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <header class="header-area header-sticky">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <nav class="main-nav">
+    
+                            <a href="{% url 'index' %}" class="logo">Quiz<em>Pedia</em></a>
+    
+                            <ul class="nav">
+                                <li><a href="{% url 'index' %}">Home</a></li>
+                                <li><a href="{% url 'about' %}">About Us</a></li>
+                                <li><a href="{% url 'contact' %}">Contact Us</a></li>
+                                <li><a href="{% url 'leaderboard' %}">Leaderboard</a></li>
+                                <li><a href="{% url 'prize' %}">Prize Winners</a></li>
+                            </ul>
+                            <a class='menu-trigger'>
+                                <span>Menu</span>
+                            </a>
+    
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+    
+        <div class="main-banner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <!-- Add a container for the text -->
+                        <div class="banner-text">
+                            <h6>HEARTY WELCOME TO ALL QUIZZARDS!!!</h6>
+                            <h2>Quiz Festival 2023</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+    <h2>Quiz Results</h2>
+    <ol>
+
+    <li><p>Your answer: {{ results.q1 }}</p>
+    <p>Correct answer: {{ correct_answers.q1 }}</p></li>
+    
+
+    <li><p>Your answer: {{ results.q2 }}</p>
+    <p>Correct answer: {{ correct_answers.q2 }}</p></li>
+    
+
+    <li><p>Your answer: {{ results.q3 }}</p>
+    <p>Correct answer: {{ correct_answers.q3 }}</p></li>
+    
+     
+    <li><p>Your answer: {{ results.q4 }}</p>
+    <p>Correct answer: {{ correct_answers.q4 }}</p></li>
+    
+     
+    <li> <p>Your answer: {{ results.q5 }}</p>
+    <p>Correct answer: {{ correct_answers.q5 }}</p></li>
+   
+  </ol>
+  <p>You have scored {{count}} out of 5</p>
+  <br>
+  <br>
+    {% endblock %}
+</body>
+
+</html>
